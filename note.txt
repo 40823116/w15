@@ -1,0 +1,13 @@
+希望採全雲端的方式建立 github pages 網站
+近端, 中端 > 雲端啟用動態網站編輯網頁內容
+登入 gmail 帳號 -> https://replit.com
+在 Replit 中建立 Repl -> 選用 Python template -> 將專案命名為 w15
+在 shell 頁面輸入 git version
+git init
+ git branch -m main
+git submodule add heeps://github.com/mdecycu/cmsimde.git cmsimde
+利用下列指令將 cmsimde 目錄中的 up_dir 內全部資料複製道專案跟目錄
+確認目前為根目錄
+cp -R ./cmsimde/up_dir/* ./
+此時按下 run -> 根據 .replit 的設定, 利用 python3 執行 maim.py
+pip install flask flask_cros bs4 lxml pelican markdown gevent 
